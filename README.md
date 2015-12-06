@@ -50,9 +50,7 @@ or use git:
     and useless.
 
 
-4. Configure a cron task to finally configure the digest:
-
-Edit your **/etc/crontab** file and add the following line:
+4. Configure a cron task to finally configure the digest. Edit your **/etc/crontab** file and add the following line:
 
 ```
     30 2 * * * <user> /usr/bin/php -q /<path_to_scripts/BLAnalyser.php > /dev/null
