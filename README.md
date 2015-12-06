@@ -13,14 +13,12 @@ The scripts uses a "neutrinoapi" service to obtain the data.
 1. Download the scripts **BLAnalyzer.php** and **BLA_configuration.conf**.
 or use git:
 
-git clone https://github.com/facundovictor/BLAnalizer.git
+    git clone https://github.com/facundovictor/BLAnalizer.git
 
 2. Protect the file:
 
-```
-chmod 400 BLAnalizer.php
-chmod 600 BLA_configuration.conf
-```
+    chmod 400 BLAnalizer.php
+    chmod 600 BLA_configuration.conf
 
 3. Configure script using the file **BLA_configuration.conf**:
 
