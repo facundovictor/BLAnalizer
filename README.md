@@ -13,15 +13,20 @@ The scripts uses a "neutrinoapi" service to obtain the data.
 1. Download the scripts *BLAnalyzer.php* and *BLA_configuration.conf*.
 or use git:
 
-    git clone https://github.com/facundovictor/BLAnalizer.git
+```
+git clone https://github.com/facundovictor/BLAnalizer.git
 
+```
 2. Protect the file:
 
-    chmod 400 BLAnalizer.php
-    chmod 600 BLA_configuration.conf
+```
+chmod 400 BLAnalizer.php
+chmod 600 BLA_configuration.conf
+```
 
 3. Configure script using the file *BLA_configuration.conf*:
 
+```
     $SMTP_Servers:  It's an array of IP/FQDN of SMTP servers that you
     want to get the report about their blacklisted status.
 
@@ -48,11 +53,14 @@ or use git:
     $LISTS_To_Ignore:   List of black lists to ignore. By default, some
     lists are ignored just because they were annoying
     and useless.
+```
 
 4. Configure a cron task to finally configure the digest:
 
 Edit your */etc/crontab* file and add the following line:
 
+```
     30 2 * * * <user> /usr/bin/php -q /<path_to_scripts/BLAnalyser.php > /dev/null
 
+```
 
